@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="事実と推測を分け、仮説検証で未知の問題に取り組む問題解決力の育成モジュール。">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>分からない問題を、解決できる問題に変える | 自走力チェック</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><a class="header-link" href="./modules.html">モジュール一覧</a></div></header>
+  <main class="container learning-page">
+    <nav class="breadcrumbs" aria-label="パンくずリスト"><a href="./index.html">診断</a> <span aria-hidden="true">/</span> <a href="./modules.html">育成モジュール</a> <span aria-hidden="true">/</span> 問題解決力</nav>
+    <section class="hero learning-hero"><p class="eyebrow">LEARNING MODULE 04 · 問題解決力</p><h1>分からない問題を、<br>解決できる問題に変える</h1><p class="lead">正解を知っていることよりも、状況を整理し、根拠を積み重ねて解決に近づくことを目指します。</p><div class="hero-meta"><span>想定期間：2〜4週間</span><span>学習時間：合計6〜10時間</span><span>初級〜中級・調整可能</span></div></section>
+    <section class="panel learning-intro"><h2>このモジュールの到達目標</h2><p>未知の問題に直面したとき、事実と推測を区別し、仮説を立てて検証し、必要に応じて他者やAIの力も借りながら、根拠を持って解決策を判断できる。</p><p class="support-text">基本的なIT操作・用語を想定しています。担当業務や経験に合わせて題材と支援の程度を調整できます。時間は目安です。</p></section>
+    <nav class="learning-nav" aria-label="ページ内の目次"><a href="#basics"><b>A</b> 基礎教材</a><a href="#exercise"><b>B</b> 演習課題</a><a href="#work"><b>C</b> 実務チャレンジ</a><a href="#review"><b>D</b> 振り返り・評価</a></nav>
+    <section id="basics" class="panel learning-section"><p class="eyebrow">A · 知る</p><h2>仮説検証と原因切り分けの基礎</h2><p>問題解決の第一歩は、原因を思いつくことではなく、何が分かっていて何が分かっていないかを整理することです。</p>
+      <h3>現象・問題・原因・解決策を分ける</h3><div class="table-scroll"><table><thead><tr><th>概念</th><th>ログイン障害での例</th></tr></thead><tbody><tr><th>現象</th><td>ログインするとエラーが表示される。</td></tr><tr><th>問題</th><td>業務に必要なシステムにアクセスできない。</td></tr><tr><th>原因</th><td>アクセスに必要な権限が割り当てられていなかった。</td></tr><tr><th>解決策</th><td>権限の状態を確認し、承認後に適切な設定へ復旧する。</td></tr></tbody></table></div><p>現象を確認した時点では、原因はまだ仮説です。パスワード、端末、ネットワーク、設定など複数の可能性を考えます。</p>
+      <h3>事実と推測を分ける</h3><div class="learning-note"><strong>問い合わせの例</strong><p>「今朝ログインできません。昨日までは使えていたので、昨夜の更新が原因だと思います」</p></div><p>「今朝ログインできなかった」「昨日までは使えた」は利用者からの報告です。時刻や条件は追加の確認が必要かもしれません。「更新が原因」は未検証の仮説です。影響範囲など、分からないことは「不明」と記録します。</p>
+      <h3>仮説を立て、検証する</h3><ol class="learning-list"><li><strong>情報を集める：</strong>エラー、発生時刻、影響範囲、環境、変更履歴を確認する。</li><li><strong>候補を考える：</strong>得られた情報に合う原因を複数挙げ、影響や確認のしやすさを考えて優先する。</li><li><strong>検証を設計する：</strong>何を確認し、どの結果なら仮説を支持・見直せるかを決める。</li><li><strong>結果から更新する：</strong>確認できたことと、まだ言えないことを分け、次の調査を決める。</li><li><strong>対応を判断する：</strong>暫定・恒久対応の効果とリスクを比べ、必要な承認、影響、戻し方と復旧確認を整理する。</li></ol><p>たとえば一人だけ失敗しても、アカウントの問題とは限りません。端末やブラウザの違いも候補に残り、追加の確認が必要です。</p>
+      <h3>AIと他者を活用する</h3><p>AIには原因候補や検証方法、見落としへの指摘を求められます。ただし、回答自体は原因特定の証拠ではありません。公式資料や実際の観察結果で確かめましょう。外部AIに情報を入力する際は、会社・顧客の規程を確認し、個人情報・認証情報・機密情報を適切に扱います。解決できないときは、影響、確認済み事項、仮説、未解決事項を整理して適切な担当者に相談します。</p>
+    </section>
+    <section id="exercise" class="panel learning-section"><p class="eyebrow">B · 試す</p><h2>演習：社内システムにログインできない</h2><p class="section-meta">目安：90〜120分 · 架空のシステムとデータを使用</p><div class="learning-note"><strong>問い合わせ</strong><p>午前9時、営業部の社員から「今朝から勤怠管理システムにログインできません。昨日までは普通に使えていました」と連絡がありました。システムは社内ネットワーク上のWebアプリで、会社の共通アカウントを使います。</p></div>
+      <h3>取り組み方</h3><ol class="learning-list"><li><strong>現象を整理：</strong>最初に確認したい事項と、それぞれの確認で何を判断するかを書き出す。</li><li><strong>情報を収集：</strong>指導者に質問し、得られた情報を事実・報告・不明点に分ける。</li><li><strong>仮説を検証：</strong>原因候補を3つ程度挙げ、それぞれの根拠、確認方法、予想される結果を整理する。</li><li><strong>対応を検討：</strong>証拠から結論の確度を判断し、暫定・恒久対応、承認、影響、戻し方、復旧確認を考える。</li><li><strong>報告：</strong>問い合わせ元には状況を分かりやすく伝え、管理者には証拠・影響・対応方針を報告する。</li></ol>
+      <p>最初の15〜20分は、以下の情報を見ずに調査方針を考え、その後に基礎教材を読んでから演習を進める方法もあります。事前と事後の考え方を比較しましょう。実施者がすでにこのケースの答えを知っている場合は、指導者が別の原因パターンを用意してください。</p>
+      <h3>指導者向け：追加情報カード</h3><p>以下は演習用に具体化した架空の情報です。関連する質問や確認が出たときに、指導者が一つずつ提示してください。受講者は必要になるまで開かないようにしましょう。</p>
+      <details class="exercise-card"><summary>エラー内容を確認する</summary><p>共通アカウントの入力後、勤怠管理システムに「アクセスできません。管理者にお問い合わせください」と表示される。詳細なエラーコードは画面に表示されない。</p></details>
+      <details class="exercise-card"><summary>他の社員への影響を確認する</summary><p>営業部の同じグループに所属する別の社員も同様のエラーになる。他部署の確認済みの社員はログインできる。全体の影響範囲はまだ調査中。</p></details>
+      <details class="exercise-card"><summary>他のシステムを確認する</summary><p>対象社員は同じ共通アカウントで別の社内システムにログインできる。</p></details>
+      <details class="exercise-card"><summary>端末・ブラウザを確認する</summary><p>対象社員は別の確認済み端末と別のブラウザでも同じエラーになる。これだけで端末に関するすべての可能性を否定できるわけではない。</p></details>
+      <details class="exercise-card"><summary>最近の変更を確認する</summary><p>前夜に勤怠管理システムの認証関連設定が更新されていた。更新と障害の因果関係は、この情報だけでは確定しない。</p></details>
+      <details class="exercise-card"><summary>ログを確認する</summary><p>管理者が確認したアプリのログでは、対象社員の認証は成功しているが、その後の認可処理で必要なロールがないため拒否された記録がある。</p></details>
+      <details class="exercise-card"><summary>アカウントと権限を確認する</summary><p>対象アカウントは有効で、対象社員は所定の営業部グループに所属している。一方、勤怠管理システムが必要とするロールは付与されていない。</p></details>
+      <details class="exercise-card"><summary>設定変更の差分を確認する</summary><p>更新前は営業部グループが勤怠管理システムの必要なロールに対応していたが、更新後の設定ではその対応が外れている。</p></details>
+      <details class="exercise-card exercise-answer"><summary>指導者向け：想定解答と対応の観点</summary><p>設定更新後に営業部グループと必要なロールの対応が外れ、認証後の認可処理でアクセスが拒否されたと考えられます。ログ、グループ所属、設定差分を根拠にし、未確認の影響範囲は明示します。設定修正とロールバックを比較し、権限・承認・他の利用者への影響・戻し方・復旧確認を検討します。再発防止として変更時の影響確認や認可テストの追加を提案できます。</p></details>
+      <p><strong>提出物：</strong>確認事項、仮説と検証結果、対応方針をまとめた調査レポートと、問い合わせ元・管理者それぞれに向けた報告。正解だけでなく、判断の根拠と受けた支援を残します。</p>
+    </section>
+    <section id="work" class="panel learning-section"><p class="eyebrow">C · 使う</p><h2>実務チャレンジ：問い合わせを調査して報告する</h2><p>実際の問い合わせや障害を一件選び、事実の整理、仮説、検証、判断を記録します。動作が遅い、Excelの計算結果がおかしい、業務手順が分からないといった題材でも構いません。</p><ol><li>問い合わせと影響範囲、緊急度を確認する。</li><li>確認できた事実、利用者の報告、推測、不明点を分ける。</li><li>原因候補と確認方法を整理し、結果に応じて仮説を更新する。</li><li>未解決事項を明示し、必要に応じて適切な担当者に相談する。</li><li>対応の効果とリスクを比べ、関係者に報告する。</li></ol>
+      <div class="learning-note"><strong>実務での前提</strong><p>本番環境の変更前に権限・承認・影響・戻し方を確認します。個人情報や認証情報は適切に扱い、重大障害やセキュリティ事故では組織の対応手順を優先してください。</p></div>
+      <h3>問題調査レポートの項目</h3><ul><li><strong>問い合わせ概要：</strong>内容、日時、対象、影響範囲、緊急度と理由。</li><li><strong>情報の整理：</strong>確認できた事実、利用者の報告、不明なこと。</li><li><strong>仮説と検証：</strong>原因候補、根拠、確認方法、調査日時、結果と分かったこと。</li><li><strong>結論：</strong>原因の確度（確定・有力・未特定）、裏付け、未確認事項。</li><li><strong>対応方針：</strong>暫定・恒久対応、影響とリスク、必要な承認・協力、戻し方と復旧確認。</li><li><strong>再発防止と振り返り：</strong>改善案、AIや外部資料の利用と検証方法、うまくいったこと、次回の改善。</li></ul><p>提出物は調査レポートと振り返りシートです。初級者は過去の既知の問い合わせを指導者と調べることから始められます。経験に応じて現在の問題や複数要因のある問題へ進みます。</p>
+    </section>
+    <section id="review" class="panel learning-section"><p class="eyebrow">D · 身につける</p><h2>振り返り・評価</h2><p>原因を特定できたかだけでなく、調査の進め方と支援の程度を評価します。未解決でも、影響を把握し、根拠を整理して適切に相談することは前進です。</p><h3>評価の目安</h3><p><strong>1：進め方に支援が必要、2：支援を受けて実行、3：自分で実行、4：状況に応じて見直し・改善</strong>を目安に、具体的な行動と受けた支援を記録します。すべてでレベル4を目指す必要はありません。</p><div class="table-scroll"><table><thead><tr><th>観点</th><th>確認する行動の例</th></tr></thead><tbody><tr><th>状況整理</th><td>事実・推測・不明点を分け、影響範囲と優先度を整理する。</td></tr><tr><th>仮説立案</th><td>根拠に基づき複数の候補を挙げ、確認の順番を考える。</td></tr><tr><th>検証</th><td>仮説に対応する確認を行い、結果に応じて方針を見直す。</td></tr><tr><th>解決策の判断</th><td>暫定・恒久対応の効果やリスクを比較する。</td></tr><tr><th>相談・報告</th><td>相手が次の判断をできるよう、状況と必要な協力を伝える。</td></tr></tbody></table></div>
+      <h3>振り返りの5問</h3><ol><li>最初に考えた原因候補と、それを疑った理由は何ですか？</li><li>新しい情報によって、最初の考えが変わった場面はありましたか？</li><li>最も有効だった確認・検証は何でしたか？</li><li>自分で解決できなかったことに、どう相談・対処しましたか？</li><li>次に似た問題が起きたら、調査方法をどう改善しますか？</li></ol><h3>診断と次の実践へ</h3><p>診断の「問題解決力」にある、事実と推測の整理、仮説検証、解決策の比較、適切な相談を、調査記録と照らして振り返りましょう。演習の完了だけで評価を上げるのではなく、別の実務場面でも再現できるか確認します。</p>
+    </section>
+    <div class="module-bottom"><a class="button button-secondary" href="./modules.html#problem-solving">← 育成モジュール一覧に戻る</a> <a class="button button-ghost" href="./index.html">診断を振り返る</a></div>
+  </main>
+  <footer class="site-footer"><div class="container"><p>自走力チェック — 自己理解と成長のための試作ツール</p></div></footer>
+</body>
+</html>

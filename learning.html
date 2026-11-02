@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="未知の技術を調べ、AIを活用しながら検証し、実務への適用を判断する学習・適応力の育成モジュール。">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>未知の技術を、自分の力で使えるようになる | 自走力チェック</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><a class="header-link" href="./modules.html">モジュール一覧</a></div></header>
+  <main class="container learning-page">
+    <nav class="breadcrumbs" aria-label="パンくずリスト"><a href="./index.html">診断</a> <span aria-hidden="true">/</span> <a href="./modules.html">育成モジュール</a> <span aria-hidden="true">/</span> 学習・適応力</nav>
+    <section class="hero learning-hero"><p class="eyebrow">LEARNING MODULE 02 · 学習・適応力</p><h1>未知の技術を、<br>自分の力で使えるようになる</h1><p class="lead">知らない技術に出会ったとき、目的を定め、調べ、試し、根拠をもって使い方を判断する。AIも活用しながら、その学習プロセスを身につけます。</p><div class="hero-meta"><span>想定期間：2〜4週間</span><span>学習時間：合計6〜10時間</span><span>初級〜中級・調整可能</span></div></section>
+    <section class="panel learning-intro"><h2>このモジュールの到達目標</h2><p>未知の技術やツールについて、必要な情報を自ら収集し、AIも活用しながら検証し、実務への適用可否を根拠に基づいて判断できる。</p><p class="support-text">基礎的なIT知識を想定しています。プログラミング経験に応じて演習の題材と支援の程度を調整できます。時間は目安です。</p></section>
+    <nav class="learning-nav" aria-label="ページ内の目次"><a href="#basics"><b>A</b> 基礎教材</a><a href="#exercise"><b>B</b> 演習課題</a><a href="#work"><b>C</b> 実務チャレンジ</a><a href="#review"><b>D</b> 振り返り・評価</a></nav>
+    <section id="basics" class="panel learning-section"><p class="eyebrow">A · 知る</p><h2>未知の技術の学び方とAIの検証</h2><p>技術の名前を知ること、仕組みや制約を説明できること、具体的な問題に使い結果を検証できることは、それぞれ異なります。まずは限定された課題で、説明しながら使える状態を目指しましょう。</p>
+      <h3>「知らない」を「使える」に変える6つのステップ</h3><ol class="learning-list"><li><strong>目的を明確にする：</strong>何を実現し、何を判断するために学ぶのかを決める。</li><li><strong>全体像をつかむ：</strong>技術が解決できることと、できないことを整理する。</li><li><strong>情報源を確認する：</strong>公式資料で対象バージョン、制約、保守状況、ライセンスを調べる。</li><li><strong>小さく試す：</strong>本番から切り離した環境と架空データで、最小の例を動かす。</li><li><strong>疑問を検証する：</strong>動く理由や失敗する条件を調べ、正常系と異常系を試す。</li><li><strong>利用可否を判断する：</strong>目的を満たすか、既存の方法や運用負担と比較する。</li></ol>
+      <div class="learning-note"><strong>調査の範囲を決める</strong><p>すべての機能を学ぶ必要はありません。今回の判断に必要なことを優先し、未確認事項はそのまま記録します。</p></div>
+      <h3>AIを学習の相手にする</h3><div class="learning-grid"><div><strong>案内役</strong><p>全体像、前提知識、学習の順番を尋ねる。</p></div><div><strong>教師役</strong><p>分からない概念の説明や具体例を求め、自分の理解を確認する。</p></div><div><strong>開発補助</strong><p>小さなサンプルやエラーの原因候補、テストケースを提案してもらう。</p></div><div><strong>レビュー役</strong><p>自分の説明や実装の誤り、見落とした制約を指摘してもらう。</p></div></div>
+      <p>たとえば「CSVをカンマで分割する方法と専用ライブラリの違いを、失敗するデータの例とともに説明してください」と尋ね、得られた例を自分で確かめます。</p><h3>回答を確かめる</h3><ul><li>APIや設定が実在し、使用するバージョンの公式資料と一致しているか。</li><li>通常の入力に加え、空データや不正な入力でも期待どおり動くか。</li><li>利用条件、ライセンス、安全性や運用上の制約を確認したか。</li></ul><p>AIに検証方法を尋ねることもできますが、提案された方法自体も確認します。コードが動いたことと、その動作や限界を理解したことは別です。</p>
+    </section>
+    <section id="exercise" class="panel learning-section"><p class="eyebrow">B · 試す</p><h2>演習：CSV読込ツールを作ろう</h2><p class="section-meta">目安：2〜3時間 · 中級例</p><p>社内で使うCSVの内容を手軽に確認したいという依頼を想定します。未経験のJavaScript向けCSV解析ライブラリを調査・選定し、CSVを表形式で表示する小さなWebページを作ってください。演習用の架空データのみを使い、外部サーバーへアップロードしない構成にします。</p>
+      <h3>必須要件</h3><ol><li>ローカルのCSVファイルを選択できる。</li><li>ヘッダー行を列名とし、内容を表形式で表示する。</li><li>ダブルクォートで囲まれたカンマを正しく扱う。</li><li>読み込めないデータに対し、利用者に分かるエラーを表示する。</li></ol>
+      <h3>サンプルデータ</h3><pre><code>id,name,department
+1,田中,営業部
+2,佐藤,情報システム部
+3,鈴木,"営業部,東京支店"</code></pre><p>3行目の部署は「営業部,東京支店」という一つの値です。単純にカンマで分割した場合との違いを確認しましょう。</p>
+      <h3>進め方と記録</h3><ol class="learning-list"><li><strong>調査：</strong>候補と参考情報を記録する。</li><li><strong>選定：</strong>用途、制約、選んだ理由をまとめる。</li><li><strong>学習：</strong>最小のサンプルを動かし、理解した点と疑問を記録する。</li><li><strong>実装：</strong>要件に合わせて作り、AIを使った箇所と自分で確認した内容を残す。</li><li><strong>検証：</strong>テストの入力、期待結果、実際の結果と未解決事項を記録する。</li></ol>
+      <div class="learning-note"><strong>最低限試したいケース</strong><p>上記の正常データ、引用符内のカンマ、空ファイル、形式が不正なデータを試し、エラーとして扱う条件も明記しましょう。表のセルにはデータを文字列として表示し、HTMLとして実行しないよう確認します。</p></div>
+      <h3>提出物と発展課題</h3><p>①動作するソースコード、②選定理由・情報源・AIの利用方法を含む学習記録、③テスト結果と未解決事項を提出します。説明できない箇所は次の学習課題として残しましょう。</p><p>余力があれば、引用符内の改行、列数の不一致、検索機能、別ライブラリとの比較などから、理解を深めたいものを一つ選んで取り組みます。</p>
+      <h3>経験に合わせた調整</h3><p><strong>初級：</strong>プログラミングを必須にせず、未経験の表計算・データ処理ツールで架空データを扱う。候補の提示も可。<br><strong>中級：</strong>上記のライブラリ演習に取り組む。<br><strong>発展：</strong>既存環境との互換性や保守・運用も含めて導入を評価する。いずれも調査・検証・判断の記録を残します。</p>
+    </section>
+    <section id="work" class="panel learning-section"><p class="eyebrow">C · 使う</p><h2>実務チャレンジ：技術検証と採用判断</h2><p>業務に役立つ可能性がある未経験のツールや技術を一つ選び、小さく検証します。採用を前提にせず、現行の方法と比較し、採用・条件付き採用・保留・不採用のいずれかを根拠とともに提案します。</p>
+      <ol class="learning-list"><li>現状の業務と解決したい問題を整理し、調査対象を選ぶ。</li><li>機能、費用、学習・運用負担、安全性などの評価基準を先に決める。</li><li>検証環境、仮説、成功・失敗の基準を決め、本番に影響しない範囲で試す。</li><li>現行方式と比較し、確認できたことと未確認のリスクを分ける。</li><li>判断理由、必要な承認、運用担当者、次の行動を関係者に伝える。</li></ol>
+      <div class="learning-note"><strong>実務での前提</strong><p>検証環境や利用するデータについて関係者と確認し、必要な承認を得てください。AIや外部ツールへの入力も、会社・顧客の規程と機密情報の取り扱いに従います。</p></div>
+      <h3>技術検証・採用判断レポート</h3><p>次の項目を目安に1〜2ページでまとめます。候補選定を指導者が支援するなど、担当業務や経験に合わせて調整してください。</p><ul><li><strong>目的：</strong>現状の課題、解決したい問題、今回の検証で明らかにしたいこと。</li><li><strong>対象：</strong>技術名、用途、公式資料、現行方式との違い。</li><li><strong>検証：</strong>仮説、環境、実施内容、判断基準、結果、AIの利用と検証方法。</li><li><strong>比較：</strong>必要な機能、費用・学習コスト、運用・保守、安全性について現行方式と比較。</li><li><strong>結論：</strong>判断と理由、未確認事項、必要な承認、次のステップ。</li></ul>
+    </section>
+    <section id="review" class="panel learning-section"><p class="eyebrow">D · 身につける</p><h2>振り返り・評価</h2><p>成果物の完成だけでなく、何を調べ、どう検証し、どの支援を受けて判断したかを確認します。評価は新たな診断ではなく、次の学習につなげるための目安です。</p>
+      <h3>評価の目安</h3><p>各観点について、<strong>1：進め方に支援が必要、2：支援を受けて実行、3：自分で実行、4：状況に応じて見直し・改善</strong>を目安に、具体的な行動と支援の内容を記録します。</p>
+      <div class="table-scroll"><table><thead><tr><th>観点</th><th>確認する行動の例</th></tr></thead><tbody><tr><th>学習計画</th><td>目的に応じて学ぶ範囲を決め、必要に応じて見直す。</td></tr><tr><th>情報収集</th><td>公式情報などを探し、信頼性や適用条件を確認する。</td></tr><tr><th>AI活用</th><td>回答を検証し、誤りや限界を踏まえて使う。</td></tr><tr><th>試行錯誤</th><td>問題に対して仮説を立て、結果から次の行動を決める。</td></tr><tr><th>応用・判断</th><td>選択肢や制約を比較し、利用可否を根拠とともに説明する。</td></tr></tbody></table></div><p class="support-text">証拠の例：公式資料と照合してAPIの誤用を修正した、異常系テストで問題を発見した、現行方式と比較して保留を提案した。</p>
+      <h3>振り返りの5問</h3><ol><li>最初に分からなかったことは何ですか？</li><li>理解するために、どんな方法を試しましたか？</li><li>AIの回答や調査結果を、何を使ってどのように検証しましたか？</li><li>失敗したことや予想と違ったことは何ですか？</li><li>次に別の未知の技術を学ぶとしたら、今回と何を変えますか？</li></ol>
+      <h3>診断と次の実践へ</h3><p>診断の「学習・適応力」にある、情報収集、新しい方法の試行、AIの回答の検証、既存の方法との比較を、学習記録や検証結果と照らして振り返りましょう。演習の完了だけで習得を判断せず、後日、別の小さな未知の技術でもどの程度自分で進められるか確認します。</p><p>支援する人は、まず「何が分からないか」「どこまで試したか」を一緒に整理します。行き詰まった場合は具体例も示し、次に本人が進められるよう支援の内容を記録します。</p>
+    </section>
+    <div class="module-bottom"><a class="button button-secondary" href="./modules.html#learning">← 育成モジュール一覧に戻る</a> <a class="button button-ghost" href="./index.html">診断を振り返る</a></div>
+  </main>
+  <footer class="site-footer"><div class="container"><p>自走力チェック — 自己理解と成長のための試作ツール</p></div></footer>
+</body>
+</html>

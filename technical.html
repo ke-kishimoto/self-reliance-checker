@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="要件整理から設計・実装・テスト・運用まで取り組む技術実践力の育成モジュール。">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>「作れる」から「安心して使えるものを作れる」へ | 自走力チェック</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><a class="header-link" href="./modules.html">モジュール一覧</a></div></header>
+  <main class="container learning-page">
+    <nav class="breadcrumbs" aria-label="パンくずリスト"><a href="./index.html">診断</a> <span aria-hidden="true">/</span> <a href="./modules.html">育成モジュール</a> <span aria-hidden="true">/</span> 技術実践力</nav>
+    <section class="hero learning-hero"><p class="eyebrow">LEARNING MODULE 05 · 技術実践力</p><h1>「作れる」から<br>「安心して使えるものを作れる」へ</h1><p class="lead">技術を使って業務上の問題を解決し、成果物を安全に使い続けるための設計・実装・テストを経験します。</p><div class="hero-meta"><span>想定期間：3〜5週間</span><span>学習時間：合計10〜16時間</span><span>初級〜中級・調整可能</span></div></section>
+    <section class="panel learning-intro"><h2>このモジュールの到達目標</h2><p>業務上の課題に対して適切な技術を選び、要件を整理したうえで設計・実装・テストを行い、安全性・保守性・運用を考慮した成果物を提供できる。</p><p class="support-text">基本的なPC操作とプログラミングの初歩を想定しています。時間は基礎的な開発経験がある人向けの目安です。未経験者は言語や開発環境の入門学習を別途行い、支援や課題の範囲を調整してください。</p></section>
+    <nav class="learning-nav" aria-label="ページ内の目次"><a href="#basics"><b>A</b> 基礎教材</a><a href="#exercise"><b>B</b> 演習課題</a><a href="#work"><b>C</b> 実務チャレンジ</a><a href="#review"><b>D</b> 振り返り・評価</a></nav>
+    <section id="basics" class="panel learning-section"><p class="eyebrow">A · 知る</p><h2>設計・実装・テストの基本</h2><p>開発を始める前に、何を解決したいか、既存の仕組みで何が不足しているか、開発以外の選択肢はないかを考えます。頻度、変更ミスのリスク、監査性、開発・運用の負担を比べ、作るべきかを判断しましょう。</p>
+      <h3>要件と完成条件を整理する</h3><div class="learning-grid"><div><strong>利用者と権限</strong><p>誰が参照・変更できるか。</p></div><div><strong>データと業務ルール</strong><p>何を扱い、必須入力や重複禁止などの条件は何か。</p></div><div><strong>制約と品質</strong><p>利用環境、データ保護、エラー時の扱いなど、守るべき条件は何か。</p></div><div><strong>完成条件</strong><p>どの動作や確認ができれば完了とするか。</p></div></div><p>曖昧な条件は関係者に確認し、決まった内容からテストの観点を考えます。</p>
+      <h3>変更しやすく設計し、小さく作る</h3><p>画面・入力、業務ルール、データ保存のそれぞれが何を担当するか考えます。これは責務を整理するための例で、必ず特定の構成を採用する必要はありません。小さく実装して動作確認し、改善するサイクルを繰り返しましょう。AIが生成したコードも役割を理解し、確認とテストを行ってから使います。</p>
+      <h3>動作を確かめ、運用まで考える</h3><p>正常な入力だけでなく、未入力・重複・不正な値などの異常系、最大文字数などの境界値、修正によって以前の機能が壊れていないかという回帰も確認します。想定する権限、データ保護、バックアップ、エラー時の対応、変更履歴、リリースや保守の手順を整理し、残った制約を利用者に伝えます。</p>
+    </section>
+    <section id="exercise" class="panel learning-section"><p class="eyebrow">B · 試す</p><h2>演習：商品マスタの管理機能を作ろう</h2><p class="section-meta">目安：5〜8時間 · 架空の業務とデータを使用</p><div class="learning-note"><strong>課題シナリオ</strong><p>商品マスタをExcelで直接編集している会社で、入力ミスや重複登録が発生しています。商品情報を管理する小さな仕組みを作り、設計からテストまでの過程を記録してください。</p></div>
+      <h3>必須要件</h3><ul><li>商品の一覧を表示し、新規登録と登録済み商品の変更ができる。</li><li>商品コードの重複を拒否し、必須項目が未入力ならエラーを表示する。</li><li>登録・変更した情報が永続的に保存される。</li></ul><p>商品コードの形式、商品名の文字数、価格の範囲、コード変更や削除の可否、利用者の権限などは課題文だけでは決まっていません。指導者や依頼者に確認し、合意した条件を要件とテストに反映してください。</p>
+      <h3>進め方と成果物</h3><ol class="learning-list"><li><strong>要件整理：</strong>不明点を確認し、業務ルールと完成条件を要件メモにまとめる。</li><li><strong>設計：</strong>商品コード・商品名・価格などのデータ、画面、処理の責務を簡易設計書にまとめる。</li><li><strong>テスト設計：</strong>実装前に入力、操作、期待結果をテストケース一覧に記録する。</li><li><strong>実装：</strong>一覧、登録、入力チェック、更新を小さく作り、都度確認する。AIの利用箇所も記録する。</li><li><strong>テストと改善：</strong>期待結果と実行結果を比較し、不具合や指摘を修正する。ソースコード、テスト結果、改善後の成果物を提出する。</li></ol>
+      <h3>テストケースの例</h3><div class="table-scroll"><table><thead><tr><th>確認する操作</th><th>期待する結果</th></tr></thead><tbody><tr><td>正しい商品情報を登録する</td><td>登録され、一覧に表示される。</td></tr><tr><td>必須項目を空にする、または商品コードを重複させる</td><td>登録されず、理由を確認できる。</td></tr><tr><td>不正な価格や合意した文字数を超える値を入力する</td><td>定めたルールに従って拒否される。</td></tr><tr><td>登録済みの商品を変更する</td><td>変更が保存され、再起動後も残る。</td></tr><tr><td>存在しない商品を更新する</td><td>変更されず、適切なエラーになる。</td></tr></tbody></table></div><p>権限制御を実装する場合は、権限のない利用者の変更が拒否されることも確認します。自動テストは必須ではありません。テストできていない条件も記録しましょう。</p>
+      <h3>経験に合わせた調整</h3><p><strong>初級：</strong>Accessのテーブル・フォームなどを使い、入力チェックの基本を学ぶ。<br><strong>中級：</strong>Webアプリで管理機能を作り、画面、業務ルール、保存の責務を考える。<br><strong>発展：</strong>検索、無効化、更新履歴、権限制御、自動テストなどから必要なものを追加し、保守性を検討する。</p><p>使用技術は統一せず、同じ目的と評価観点で取り組みます。架空データを用いた演習用の実装を、そのまま本番で安全に使えるものと見なさないでください。</p>
+    </section>
+    <section id="work" class="panel learning-section"><p class="eyebrow">C · 使う</p><h2>実務チャレンジ：定型作業をツール化する</h2><p class="section-meta">目安：5〜10時間</p><p>担当業務の定型作業を一つ選び、1〜2週間程度で取り組める小さな範囲のツールを作ります。CSVの形式チェック、Excelの集計、帳票作成などを題材に、現行方式と正確性・安全性・効率・保守性を比較しましょう。開発以外の方法が適切なら、その判断も記録します。</p><ol><li>対象業務、現状の問題、解決したいことを確認する。</li><li>利用者、入力・出力、業務ルール、権限、完成条件を決める。</li><li>技術を選び、小さく設計・実装し、正常系と異常系をテストする。</li><li>既存データへの影響を確認し、利用手順とエラー時の対応を残す。</li><li>改善前後の負担や正確性、残ったリスク、利用者の意見を記録する。</li></ol>
+      <div class="learning-note"><strong>実務での前提</strong><p>まずは検証環境と適切に加工されたテストデータを使用し、本番データを直接操作しません。実運用を始める場合は、業務責任者や指導者のレビューと承認を受けてください。検証用ツールの完成まででも学習成果になります。</p></div>
+      <h3>ツール化レポートの項目</h3><ul><li><strong>対象と目的：</strong>現在の作業方法、問題、解決したいこと。</li><li><strong>要件・設計：</strong>利用者、機能、データ、ルール、安全上の注意、完成条件、技術選定の理由と処理の流れ。</li><li><strong>実装：</strong>実装した機能、工夫、AIの利用箇所、発生した問題と対応。</li><li><strong>テスト：</strong>ケースごとの入力・操作、期待結果、実行結果、未確認事項。</li><li><strong>評価：</strong>改善前後の時間や負担、正確性、利用者の意見、残る問題とリスク。</li><li><strong>運用・保守と振り返り：</strong>利用手順、問い合わせ先、エラー時の対応、改善候補、学んだこと。</li></ul>
+    </section>
+    <section id="review" class="panel learning-section"><p class="eyebrow">D · 身につける</p><h2>振り返り・評価</h2><p>動く成果物だけでなく、要件の確認、設計上の判断、テストで発見した問題、改善の過程を評価します。完成しなかった機能や支援を受けた箇所も明らかにします。</p><h3>評価の目安</h3><p><strong>1：進め方に支援が必要、2：支援を受けて実行、3：自分で実行、4：変更や運用を踏まえて改善</strong>を目安に、具体的な行動と支援の内容を記録します。全員がレベル4を目指す必要はありません。</p><div class="table-scroll"><table><thead><tr><th>観点</th><th>確認する行動の例</th></tr></thead><tbody><tr><th>要件整理</th><td>必要な機能、完成条件、制約や運用を整理する。</td></tr><tr><th>設計</th><td>データ構造と処理の責務を考え、変更・保守のしやすさを検討する。</td></tr><tr><th>実装</th><td>調査やAIを活用しながら機能を作り、その内容を説明する。</td></tr><tr><th>テスト</th><td>正常系・異常系を設計して実施し、必要に応じて回帰も確認する。</td></tr><tr><th>運用・保守</th><td>他者が利用・保守するための手順や安全な運用を考える。</td></tr></tbody></table></div>
+      <h3>振り返りの5問</h3><ol><li>作ったものは、どのような問題を解決するためのものですか？</li><li>設計・実装で迷ったことと、判断した理由は何ですか？</li><li>テストによって発見した問題は何ですか？</li><li>仕様変更が入るとしたら、どこを修正する必要がありますか？</li><li>他の人が利用・保守するために、何を改善したいですか？</li></ol><h3>診断と次の実践へ</h3><p>診断の「技術実践力」にある、技術選択、調査・AIを活用した実装、動作検証、保守性・安全性・運用への配慮を、成果物と記録から振り返ります。演習の完了だけで習得を判断せず、別の小さな開発課題でも実践できるか確認しましょう。</p>
+    </section>
+    <div class="module-bottom"><a class="button button-secondary" href="./modules.html#technical">← 育成モジュール一覧に戻る</a> <a class="button button-ghost" href="./index.html">診断を振り返る</a></div>
+  </main>
+  <footer class="site-footer"><div class="container"><p>自走力チェック — 自己理解と成長のための試作ツール</p></div></footer>
+</body>
+</html>
