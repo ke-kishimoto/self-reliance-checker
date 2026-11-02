@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IT人材の自走力を7分野・28項目から振り返るセルフチェックツールです。">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>自走力チェック | IT人材の自己診断</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><span class="header-tag">IT人材の自己診断</span></div>
+  </header>
+  <main class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">SELF-RELIANCE CHECK</p>
+      <h1 id="hero-title">自走力チェッカー</h1>
+      <p class="lead">主体性・学習力・課題発見力など、7つの観点から日頃の行動を振り返るチェックリストです。評価は合否ではなく、次の成長に向けた対話の出発点です。</p>
+      <div class="hero-meta"><span>7つの能力</span><span>28のチェック項目</span><span>ブラウザ内で保存</span></div>
+    </section>
+    <section class="notice" aria-label="利用上の注意"><strong>この診断について</strong><p>独自に設計した振り返り用のチェックリストです。科学的な心理検査や人事評価尺度として検証されたものではありません。点数だけで人物の優劣を判定しないでください。</p></section>
+    <section class="summary panel" aria-labelledby="progress-title">
+      <div class="summary-top"><div><p class="eyebrow">YOUR PROGRESS</p><h2 id="progress-title">診断の進捗</h2></div><div class="progress-number"><strong id="answered-count">0</strong><span> / <span id="question-count">28</span> 項目</span></div></div>
+      <div class="progress-track" role="progressbar" aria-label="回答の進捗" aria-valuemin="0" aria-valuemax="28" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+      <p class="support-text">直近1〜3か月の行動を思い浮かべて評価してください。判断材料がない場合は「未評価」のままで構いません。</p>
+      <div class="scale" aria-label="評価の目安"><div><b>1</b><span>支援が必要</span></div><div><b>2</b><span>一部できる</span></div><div><b>3</b><span>概ねできる</span></div><div><b>4</b><span>継続的に実践</span></div></div>
+    </section>
+    <div class="section-heading"><div><p class="eyebrow">CHECKLIST</p><h2>7つの能力を振り返る</h2></div><button type="button" id="toggle-all" class="button button-ghost">すべて開く</button></div>
+    <div id="questions" class="category-stack"></div>
+    <section id="results" class="panel results" aria-labelledby="results-title">
+      <div class="results-header"><div><p class="eyebrow">YOUR RESULTS</p><h2 id="results-title">診断結果</h2></div><div class="average"><span>回答済み項目の平均</span><strong id="overall-average">—</strong><span> / 4.00</span></div></div>
+      <p id="result-note" class="support-text" aria-live="polite">項目を評価すると、ここに分野別の結果が表示されます。</p>
+      <div id="category-results" class="result-bars"></div>
+      <div class="reflection"><label for="reflection-note">振り返りメモ <span>（任意）</span></label><textarea id="reflection-note" rows="4" placeholder="できたこと、具体的な行動、次に取り組むことなど"></textarea></div>
+      <div class="actions"><button type="button" class="button button-primary" id="download-json">結果をJSONで保存</button><button type="button" class="button button-secondary" id="download-csv">結果をCSVで保存</button><button type="button" class="button button-secondary" id="print-result">印刷 / PDF保存</button></div>
+      <div class="utility-actions"><label class="import-label button button-ghost" for="import-json">JSONを読み込む<input type="file" id="import-json" accept="application/json,.json" hidden></label><button type="button" class="button button-danger" id="clear-data">回答をリセット</button></div>
+      <p class="privacy-note">回答とメモは、お使いのブラウザ内（localStorage）にのみ自動保存されます。このページから外部サーバーに送信しません。共有端末ではご注意ください。</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>自走力チェック — 自己理解と成長のための試作ツール</p></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
