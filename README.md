@@ -1,21 +1,33 @@
 # 自走力チェック（静的Webアプリ）
 
-IT人材の自走力を **7分野×4項目＝28項目** から振り返る、HTML / CSS / JavaScript のシンプルなツールです。フレームワーク、外部ライブラリ、ビルド環境、サーバーは不要です。
+IT人材の自走力を **7分野×4項目＝28項目** から振り返る、HTML / CSS / JavaScript のシンプルなツールです。公開済みのHTMLを利用するだけなら、ビルド環境やサーバーは不要です。7つの教材を編集する場合は、MarkdownからHTMLを生成します。
 
 ## 構成
 
 - `index.html`：画面構成
 - `styles.css`：見た目とレスポンシブ対応
 - `app.js`：診断項目、集計、保存、データの入出力
+- `src/content/*.md`：7つの教材本文（編集用）
+- `src/layouts/*.html`：各教材のページ枠
+- `ownership.html` など7つの教材HTML：上記から生成する公開用HTML
+- `scripts/build-module.mjs`：教材の生成スクリプト
 
 ## ローカルで使う
 
 `index.html` をブラウザで開いてください。回答の自動保存は、ブラウザの環境によって `file://` では制限される場合があります。確実に動作確認する場合は、フォルダ内で `python3 -m http.server 8000` を実行し、`http://localhost:8000` にアクセスしてください。
 
+## 教材を編集する
+
+Node.js 20以上とnpmを用意し、初回に `npm ci` を実行します。教材本文は `src/content/` 内の対応するMarkdownファイルを編集し、`npm run build` でルートの教材HTMLをすべて再生成してください。ページの枠やタイトルなどは `src/layouts/` 内の対応するHTMLファイルにあります。例えば問題解決力の教材は、`src/content/problem-solving.md` と `src/layouts/problem-solving.html` から `problem-solving.html` を生成します。
+
+生成後はMarkdown、テンプレートと生成されたHTMLを一緒にコミットしてください。現状のGitHub Pagesの公開方法ではビルドは自動実行されず、ルートのHTMLがそのまま公開されます。生成されたHTMLは直接編集せず、ソースを修正して再生成します。診断画面と教材一覧ページは従来どおりHTMLを直接編集します。
+
+見出し、段落、リストなどはMarkdownで編集できます。表や開閉カード、装飾のある部分は見た目を保つためにHTMLを残しています。Markdownの構文上、日本語の記号に隣接する強調は解釈されない場合があるため、必要に応じて `<strong>` を使用してください。ビルド後に編集した教材のHTMLをブラウザで開き、表示を確認してください。
+
 ## GitHub Pages で公開する
 
 1. GitHub で新しいリポジトリを作成します（例：`self-reliance-checker`）。
-2. 3つのファイルをリポジトリのルートにアップロードし、コミットします（READMEも任意で追加）。
+2. HTML、CSS、JavaScriptなど、公開に必要なファイルをリポジトリのルートに配置し、コミットします。教材の編集・再生成に必要なソースも併せて管理することを推奨します。
 3. リポジトリの **Settings → Pages** を開きます。
 4. **Build and deployment** の **Source** に `Deploy from a branch` を選び、**Branch** に `main` と `/(root)` を指定して保存します。
 5. 公開URLは通常 `https://<GitHubユーザー名>.github.io/self-reliance-checker/` の形式です。GitHub Pages に表示されたURLを確認してください。

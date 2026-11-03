@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "marked": "16.4.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-module.mjs"
+  }
+}
