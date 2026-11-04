@@ -3,24 +3,54 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="IT人材の自走力を7分野・28項目から振り返るセルフチェックツールです。">
+  <meta name="description" content="自走力の考え方と7つの能力を知り、自己診断と実践につなげるサイトです。">
   <meta name="theme-color" content="#f6f7fb">
-  <title>自走力チェック | IT人材の自己診断</title>
+  <title>自走力とは・診断チェック | 自走力チェック</title>
   <link rel="stylesheet" href="./styles.css">
   <script defer src="./app.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><span class="header-tag">IT人材の自己診断</span></div>
-  </header>
-  <main class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">SELF-RELIANCE CHECK</p>
-      <h1 id="hero-title">自走力チェッカー</h1>
-      <p class="lead">主体性・学習力・課題発見力など、7つの観点から日頃の行動を振り返るチェックリストです。評価は合否ではなく、次の成長に向けた対話の出発点です。</p>
-      <div class="hero-meta"><span>7つの能力</span><span>28のチェック項目</span><span>ブラウザ内で保存</span></div>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><nav class="home-nav" aria-label="メインナビゲーション"><a href="#check">診断チェック</a><a href="./modules.html">育成モジュール</a></nav></div></header>
+  <main class="container home-page">
+    <section class="home-hero" aria-labelledby="home-title">
+      <p class="eyebrow">SELF-RELIANCE FOR ENGINEERS</p>
+      <h1 id="home-title">自分で考え、<br>周りと進める力を。</h1>
+      <p class="home-hero-lead">自走力を知り、日々の仕事を振り返り、<br class="desktop-break">次の一歩につなげるためのサイトです。</p>
+      <div class="home-actions"><a class="button button-primary" href="#check">自走力診断チェック <span aria-hidden="true">→</span></a><a class="button button-secondary" href="./modules.html">育成モジュールを見る <span aria-hidden="true">→</span></a></div>
+      <p class="home-hero-note">7つの能力 · 28項目のセルフチェック · ブラウザ内に保存</p>
     </section>
-    <section class="module-callout panel" aria-labelledby="module-callout-title"><div><p class="eyebrow">LEARNING MODULES</p><h2 id="module-callout-title">診断の次は、実践へ</h2><p>7つの能力を育てるための教材・演習・実務チャレンジを紹介します。</p></div><a class="button button-primary" href="./modules.html">育成モジュールを見る →</a></section>
+    <section class="home-section definition-section" aria-labelledby="definition-title">
+      <div class="home-section-heading"><p class="eyebrow">WHAT IS SELF-RELIANCE?</p><h2 id="definition-title">自走力とは</h2></div>
+      <div class="definition-card"><p class="definition-main">自走できるエンジニアとは、与えられた目的に対して、<strong>自分で考え、必要な知識や協力を得ながら、仕事を前に進められる人</strong>のこと。</p><p>何でも一人で解決できる必要はありません。分からないことを調べたり、周囲に相談したりすることも、自分で仕事を前に進めるための大切な行動です。</p></div>
+    </section>
+    <section class="home-section" aria-labelledby="abilities-title">
+      <div class="home-section-heading"><p class="eyebrow">SEVEN ABILITIES</p><h2 id="abilities-title">自走力を支える、7つの能力</h2><p>自走力を7つの能力に分けて考えます。それぞれが関わり合い、仕事を前に進める力になります。</p></div>
+      <div class="ability-grid">
+        <article class="ability-item"><span>01</span><h3>主体性</h3><p>自分の意思で考えて行動を起こす</p></article>
+        <article class="ability-item"><span>02</span><h3>学習・適応力</h3><p>知らないことや変化を受け入れ、学びながら対応する</p></article>
+        <article class="ability-item"><span>03</span><h3>課題発見力</h3><p>現状を疑い、問題や改善の機会を見つける</p></article>
+        <article class="ability-item"><span>04</span><h3>問題解決力</h3><p>原因を調査し、選択肢を比較して判断する</p></article>
+        <article class="ability-item"><span>05</span><h3>技術実践力</h3><p>技術を使い、実際に問題を解決する</p></article>
+        <article class="ability-item"><span>06</span><h3>伝達・合意形成力</h3><p>相手に伝わる説明をし、必要な協力を得る</p></article>
+        <article class="ability-item"><span>07</span><h3>継続改善力</h3><p>一度の対応で終わらせず、仕組みを改善する</p></article>
+      </div>
+    </section>
+    <section class="home-section" aria-labelledby="relationship-title">
+      <div class="home-section-heading"><p class="eyebrow">HOW THEY WORK TOGETHER</p><h2 id="relationship-title">7つの能力の関係</h2><p>主体性を行動の原動力に、4つの能力を使って仕事を進め、結果を次に生かします。学習・適応力は、すべての能力の成長を支えます。</p></div>
+      <figure class="ability-map" aria-labelledby="relationship-title">
+        <div class="map-origin"><span class="map-label">行動の原動力</span><strong>主体性</strong><p>自分の意思で行動を起こす</p></div>
+        <div class="map-arrow" aria-hidden="true">↓</div>
+        <div class="map-grid">
+          <div><strong>課題発見力</strong><p>何が問題かを見つける</p></div><div><strong>問題解決力</strong><p>どう解決するか考える</p></div>
+          <div><strong>技術実践力</strong><p>実際に形にする</p></div><div><strong>伝達・合意形成力</strong><p>周囲と協力して進める</p></div>
+        </div>
+        <div class="map-arrow" aria-hidden="true">↓</div>
+        <div class="map-improve"><strong>継続改善力</strong><p>結果を振り返り、次につなげる</p></div>
+        <div class="map-foundation"><strong>学習・適応力</strong><p>すべての能力の成長を支える</p></div>
+      </figure>
+    </section>
+    <section id="check" class="diagnostic-section" aria-labelledby="check-title">
+      <div class="home-section-heading"><p class="eyebrow">SELF-RELIANCE CHECK</p><h2 id="check-title">自走力診断チェック</h2><p>7つの観点から日頃の行動を振り返ります。評価は合否ではなく、次の成長に向けた対話の出発点です。</p></div>
     <section class="notice" aria-label="利用上の注意"><strong>この診断について</strong><p>独自に設計した振り返り用のチェックリストです。科学的な心理検査や人事評価尺度として検証されたものではありません。点数だけで人物の優劣を判定しないでください。</p></section>
     <section class="summary panel" aria-labelledby="progress-title">
       <div class="summary-top"><div><p class="eyebrow">YOUR PROGRESS</p><h2 id="progress-title">診断の進捗</h2></div><div class="progress-number"><strong id="answered-count">0</strong><span> / <span id="question-count">28</span> 項目</span></div></div>
@@ -39,6 +69,8 @@
       <div class="utility-actions"><label class="import-label button button-ghost" for="import-json">JSONを読み込む<input type="file" id="import-json" accept="application/json,.json" hidden></label><button type="button" class="button button-danger" id="clear-data">回答をリセット</button></div>
       <p class="privacy-note">回答とメモは、お使いのブラウザ内（localStorage）にのみ自動保存されます。このページから外部サーバーに送信しません。共有端末ではご注意ください。</p>
     </section>
+    </section>
+    <section class="module-callout panel" aria-labelledby="module-callout-title"><div><p class="eyebrow">LEARNING MODULES</p><h2 id="module-callout-title">診断の次は、実践へ</h2><p>7つの能力を育てるための教材・演習・実務チャレンジを紹介します。</p></div><a class="button button-primary" href="./modules.html">育成モジュールを見る →</a></section>
   </main>
   <footer class="site-footer"><div class="container"><p>自走力チェック — 自己理解と成長のための試作ツール</p></div></footer>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
