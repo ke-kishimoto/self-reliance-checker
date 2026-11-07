@@ -1,0 +1,69 @@
+<section class="panel learning-section quick-intro">
+
+## この実践でやること
+
+依頼を作業に分解する前に、目的・完了条件・期限と不明点を区別して、確認する内容を考えます。 実務経験や相談相手は不要です。紙や普段使っているメモ帳に書きましょう。時間は目安です。
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">CASE · 題材</p>
+
+## 架空の場面
+
+<div class="learning-note"><strong>場面</strong><p>上司から「来週の会議用に、今月の問い合わせ状況をまとめておいてください」と依頼されました。会議の参加者や、どんな判断に使う資料かは聞いていません。</p></div>
+
+まずは上の情報だけを使って取り組みましょう。
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">PRACTICE · やってみる</p>
+
+## メモに整理する
+
+1. <strong>題材を読む（2分）：</strong> 依頼を読み、今分かっている内容と期限をメモする。
+2. <strong>整理する（5分）：</strong> 誰が何のために使うか、何ができれば完了かについて、確認したいことを3つ書く。
+3. <strong>次の行動を考える（4分）：</strong> 確認できるまでの仮の進め方と、途中で相談・報告する場面を考える。
+4. <strong>見比べて振り返る（4分）：</strong> 記入例を開き、未確認のまま決めつけたことがないか振り返る。
+
+### 書き出すときの型
+
+- 分かっていること
+- 目的・利用者についての質問
+- 完了条件・期限についての質問
+- 仮の次の行動と相談先
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">REVIEW · 振り返る</p>
+
+## 記入例と比べる
+
+自分のメモを作ってから開きましょう。これは一例で、他の考え方もあります。
+
+<details class="exercise-card"><summary>記入例を開く</summary><div class="quick-example"><ul><li>分かっていること：来週の会議向けに今月の問い合わせ状況をまとめる依頼を受けた。具体的な提出日時は不明。</li><li>目的・利用者：誰が資料を読み、会議でどんな判断をするのか確認する。</li><li>完了条件・期限：必要な集計項目や形式、提出日時、確認者を尋ねる。</li><li>次の行動：手元の問い合わせ記録を確認し、集計前に依頼者へ不明点を相談する。</li></ul></div></details>
+
+### 振り返りの問い
+
+1. 目的を確認せずに決めていたことは何ですか？
+2. 仮の計画のうち、相手との確認が必要なのはどこですか？
+3. 次に似た依頼を受けたとき、最初に何を尋ねますか？
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">NEXT STEP · 次の一歩</p>
+
+## 次は実際の場面でも
+
+身近な仕事や学習にも、この型を応用できます。状況に応じて、必要な相手に相談しながら進めましょう。
+
+さらに学ぶ場合は、<a href="./ownership.html">主体性の育成モジュール</a>へ進めます。<a href="./ownership.html#exercise">一人で取り組むための演習手順</a>も確認できます。
+
+</section>

@@ -1,0 +1,69 @@
+<section class="panel learning-section quick-intro">
+
+## この実践でやること
+
+結果と未確認のことを分け、次回試せる改善と確かめ方を決めます。 実務経験や相談相手は不要です。紙や普段使っているメモ帳に書きましょう。時間は目安です。
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">CASE · 題材</p>
+
+## 架空の場面
+
+<div class="learning-note"><strong>場面</strong><p>架空のチームで、月次報告を3回担当しました。資料の提出は3回とも期限内でしたが、毎回、必要な数値の確認先を探すのに時間がかかりました。前回は担当者から確認先を教えてもらい、作業を完了しています。確認先を探した時間は記録されていません。</p></div>
+
+まずは上の情報だけを使って取り組みましょう。
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">PRACTICE · やってみる</p>
+
+## メモに整理する
+
+1. <strong>題材を読む（2分）：</strong> 題材を読み、うまくいったことと困ったことをそれぞれ書く。
+2. <strong>整理する（5分）：</strong> 原因として考えられることと、まだ確認できていないことを分ける。
+3. <strong>次の行動を考える（4分）：</strong> 次回試す小さな改善を一つ決め、効果の確かめ方を考える。
+4. <strong>見比べて振り返る（4分）：</strong> 記入例と比べ、改善の実行や効果を確認できる形か振り返る。
+
+### 書き出すときの型
+
+- うまくいったこと
+- 困ったこと・未確認の点
+- 次に試すこと
+- 効果の確認方法
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">REVIEW · 振り返る</p>
+
+## 記入例と比べる
+
+自分のメモを作ってから開きましょう。これは一例で、他の考え方もあります。
+
+<details class="exercise-card"><summary>記入例を開く</summary><div class="quick-example"><ul><li>うまくいったこと：3回とも期限内に提出できた。</li><li>困ったこと：毎回確認先を探した。所要時間や原因は記録されていない。</li><li>次に試すこと：次回、数値ごとの確認先をメモし、必要に応じて担当者に内容を確認する。</li><li>確認方法：次の2回で確認先を探す時間と困った点を記録し、以前の状況は分かる範囲で振り返る。</li></ul></div></details>
+
+### 振り返りの問い
+
+1. うまくいったことも改善に活かせていますか？
+2. 原因や効果を、確認する前に決めつけていませんか？
+3. 次に試す行動は、自分の状況に合わせて調整できますか？
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">NEXT STEP · 次の一歩</p>
+
+## 次は実際の場面でも
+
+身近な仕事や学習にも、この型を応用できます。状況に応じて、必要な相手に相談しながら進めましょう。
+
+さらに学ぶ場合は、<a href="./improvement.html">継続改善力の育成モジュール</a>へ進めます。<a href="./improvement.html#exercise">一人で取り組むための演習手順</a>も確認できます。
+
+</section>

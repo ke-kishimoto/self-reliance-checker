@@ -12,3 +12,6 @@
 /* トップページ内の診断 */
 .diagnostic-section{scroll-margin-top:20px}.diagnostic-section .results{margin-bottom:30px}
 @media print{.home-hero,.home-section{display:none!important}}
+
+/* 問題解決力の実践への導線 */
+.result-next{grid-column:1/-1;background:#f4f7fd;border-radius:10px;padding:13px 15px;font-size:.83rem}.result-next p{margin:4px 0 8px;color:var(--muted)}.result-next-links{display:flex;flex-wrap:wrap;gap:8px 20px}.result-next a,.learning-paths a,.quick-next a{color:var(--accent);font-weight:700}.learning-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 20px}.learning-paths>div{padding:15px;background:#f4f7fd;border:1px solid #e1e9f6;border-radius:10px;font-size:.86rem}.learning-paths p{color:var(--muted);margin:5px 0}.quick-callout{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:20px 0;padding:16px 20px;background:#f0f5ff;border-radius:12px}.quick-callout p{margin:0;font-size:.88rem}.quick-callout .button{flex-shrink:0}.quick-example{padding:0 15px 14px}.quick-example ul{margin:0}.quick-example p{padding:0;margin:10px 0 0}.quick-next{font-size:.88rem;color:var(--muted)}@media(max-width:650px){.learning-paths{grid-template-columns:1fr}.quick-callout{align-items:flex-start;flex-direction:column}}

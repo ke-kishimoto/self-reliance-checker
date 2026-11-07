@@ -1,0 +1,69 @@
+<section class="panel learning-section quick-intro">
+
+## この実践でやること
+
+現象と影響を整理し、優先順位を考えるために足りない情報を見つけます。 実務経験や相談相手は不要です。紙や普段使っているメモ帳に書きましょう。時間は目安です。
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">CASE · 題材</p>
+
+## 架空の場面
+
+<div class="learning-note"><strong>場面</strong><p>あるチームでは、月末に6部署から届く表を担当者が一つにまとめます。直近3か月は毎月2〜3部署に入力の修正を依頼しました。担当者は「集計に毎月8時間ほどかかる」と話しています。工程ごとの時間や、修正が期限に与えた影響は分かっていません。</p></div>
+
+まずは上の情報だけを使って取り組みましょう。
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">PRACTICE · やってみる</p>
+
+## メモに整理する
+
+1. <strong>題材を読む（2分）：</strong> 題材を読み、誰のどの作業で何が起きているかを一文にする。
+2. <strong>整理する（5分）：</strong> 分かっていることと、負担やリスクについての推測を分けて書く。
+3. <strong>次の行動を考える（4分）：</strong> 改善候補を比べるために追加で確かめたいことを2つ書く。
+4. <strong>見比べて振り返る（4分）：</strong> 記入例を開き、影響を決めつけていないかと次の確認を振り返る。
+
+### 書き出すときの型
+
+- 対象の作業と困りごと
+- 確認できる情報
+- 考えられる影響と未確認の点
+- 次に確認すること
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">REVIEW · 振り返る</p>
+
+## 記入例と比べる
+
+自分のメモを作ってから開きましょう。これは一例で、他の考え方もあります。
+
+<details class="exercise-card"><summary>記入例を開く</summary><div class="quick-example"><ul><li>作業と困りごと：担当者が月末に各部署の表をまとめる際、入力修正を依頼している。</li><li>情報：直近3か月は毎月2〜3部署に修正を依頼。作業時間は担当者からの報告で月約8時間。</li><li>考えられる影響：確認や修正に負担がかかる可能性があるが、工程別の時間や期限への影響は不明。</li><li>次に確認：修正依頼と集計の各工程にかかる時間、利用者や締切への影響を確認する。</li></ul></div></details>
+
+### 振り返りの問い
+
+1. 自動化などの解決策より先に、問題を説明できましたか？
+2. 影響の大きさを判断するには、どんな情報が必要ですか？
+3. 他の人に確認するとしたら、何を尋ねますか？
+
+</section>
+
+<section class="panel learning-section">
+
+<p class="eyebrow">NEXT STEP · 次の一歩</p>
+
+## 次は実際の場面でも
+
+身近な仕事や学習にも、この型を応用できます。状況に応じて、必要な相手に相談しながら進めましょう。
+
+さらに学ぶ場合は、<a href="./discovery.html">課題発見力の育成モジュール</a>へ進めます。<a href="./discovery.html#exercise">一人で取り組むための演習手順</a>も確認できます。
+
+</section>

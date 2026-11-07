@@ -9,9 +9,9 @@ IT人材の自走力を **7分野×4項目＝28項目** から振り返る、HTM
 - `modules.html`：育成モジュール一覧
 - `styles.css`：見た目とレスポンシブ対応
 - `app.js`：診断項目、集計、保存、データの入出力
-- `src/content/*.md`：7つの教材本文（編集用）
+- `src/content/*.md`：7つの教材と各能力の15分実践の本文（編集用）
 - `src/layouts/*.html`：各教材のページ枠
-- `ownership.html` など7つの教材HTML：上記から生成する公開用HTML
+- `ownership.html` など7つの教材HTMLと各能力の `*-quick.html`：上記から生成する公開用HTML
 - `scripts/build-module.mjs`：教材の生成スクリプト
 
 ## ローカルで使う
@@ -20,7 +20,7 @@ IT人材の自走力を **7分野×4項目＝28項目** から振り返る、HTM
 
 ## 教材を編集する
 
-Node.js 20以上とnpmを用意し、初回に `npm ci` を実行します。教材本文は `src/content/` 内の対応するMarkdownファイルを編集し、`npm run build` でルートの教材HTMLをすべて再生成してください。ページの枠やタイトルなどは `src/layouts/` 内の対応するHTMLファイルにあります。例えば問題解決力の教材は、`src/content/problem-solving.md` と `src/layouts/problem-solving.html` から `problem-solving.html` を生成します。
+Node.js 20以上とnpmを用意し、初回に `npm ci` を実行します。教材本文は `src/content/` 内の対応するMarkdownファイルを編集し、`npm run build` でルートの教材HTMLと各能力の15分実践のHTMLをすべて再生成してください。ページの枠やタイトルなどは `src/layouts/` 内の対応するHTMLファイルにあります。例えば問題解決力の教材は、`src/content/problem-solving.md` と `src/layouts/problem-solving.html` から `problem-solving.html` を生成します。
 
 生成後はMarkdown、テンプレートと生成されたHTMLを一緒にコミットしてください。現状のGitHub Pagesの公開方法ではビルドは自動実行されず、ルートのHTMLがそのまま公開されます。生成されたHTMLは直接編集せず、ソースを修正して再生成します。診断画面と教材一覧ページは従来どおりHTMLを直接編集します。
 

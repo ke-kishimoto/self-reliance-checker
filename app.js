@@ -46,6 +46,16 @@ const CATEGORIES = [
   ]}
 ];
 
+const PRACTICES = {
+  "ownership": { title: "依頼の目的と完了条件を整理する", next: "依頼の目的や完成条件を考え、確認したいことを整理してみましょう。" },
+  "learning": { title: "新しい言葉を学び、説明してみる", next: "新しい言葉の目的や注意点を、自分の言葉で説明してみましょう。" },
+  "discovery": { title: "困りごとと、その影響を整理する", next: "誰が何に困っているかと、まだ分からない影響を整理してみましょう。" },
+  "problem-solving": { title: "事実と推測を分ける", next: "困りごとを一つ選び、事実と推測を分けてみましょう。" },
+  "technical": { title: "小さな機能の確認項目を考える", next: "機能の条件から、正常時とエラー時の確認項目を考えてみましょう。" },
+  "communication": { title: "状況と相談したいことを伝える", next: "相手が判断できるよう、状況と相談したいことをまとめてみましょう。" },
+  "improvement": { title: "振り返りから次の改善を決める", next: "作業の結果を振り返り、次回試す小さな工夫を考えてみましょう。" },
+};
+
 const STORAGE_KEY = "it-self-reliance-check-v1";
 const allQuestions = CATEGORIES.flatMap(c => c.questions);
 const questionIds = new Set(allQuestions.map(q => q.id));
@@ -130,7 +140,18 @@ function updateResults() {
     const track=document.createElement("div"); track.className="result-track"; track.setAttribute("role","meter");track.setAttribute("aria-label",`${cat.name}の平均点`);track.setAttribute("aria-valuemin","0");track.setAttribute("aria-valuemax","4");track.setAttribute("aria-valuenow",String(average??0));
     const fill=document.createElement("div");fill.className="result-fill";fill.style.width=`${average===null?0:average/4*100}%`;track.append(fill);
     const score=document.createElement("span");score.className="result-score";score.textContent=average===null?"—":`${average.toFixed(1)} (${count}/${total})`;
-    row.append(label,track,score);container.append(row);
+    row.append(label,track,score);
+    if (PRACTICES[cat.id]) {
+      const practice = PRACTICES[cat.id];
+      const next = document.createElement("div"); next.className = "result-next";
+      const heading = document.createElement("strong"); heading.textContent = `${cat.name}の次の一歩`;
+      const description = document.createElement("p"); description.textContent = `${practice.next} 未評価でも取り組めます。`;
+      const links = document.createElement("div"); links.className = "result-next-links";
+      const quick = document.createElement("a"); quick.href = `./${cat.id}-quick.html`; quick.textContent = `15分実践：${practice.title}`;
+      const module = document.createElement("a"); module.href = `./${cat.id}.html`; module.textContent = `${cat.name}をじっくり学ぶ`;
+      links.append(quick, module); next.append(heading, description, links); row.append(next);
+    }
+    container.append(row);
   });
 }
 function updateToggleButton() {

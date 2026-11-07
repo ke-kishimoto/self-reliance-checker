@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { marked } from 'marked';
 
 const root = new URL('../', import.meta.url);
-const modules = ['ownership', 'learning', 'discovery', 'problem-solving', 'technical', 'communication', 'improvement'];
+const modules = ['ownership', 'learning', 'discovery', 'problem-solving', 'technical', 'communication', 'improvement', 'ownership-quick', 'learning-quick', 'discovery-quick', 'problem-solving-quick', 'technical-quick', 'communication-quick', 'improvement-quick'];
 const placeholder = '{{CONTENT}}';
 
 for (const name of modules) {
