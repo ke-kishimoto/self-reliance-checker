@@ -1,0 +1,147 @@
+[
+  {
+    "slug": "situation-01-case",
+    "title": "目的が分からない依頼を受けた",
+    "number": 1
+  },
+  {
+    "slug": "situation-03-case",
+    "title": "資料が古く、現在の構成が分からない",
+    "number": 3
+  },
+  {
+    "slug": "situation-04-case",
+    "title": "業務を引き継いだが作業の理由が分からない",
+    "number": 4
+  },
+  {
+    "slug": "situation-05-case",
+    "title": "依頼内容が途中で変わった",
+    "number": 5
+  },
+  {
+    "slug": "situation-06-case",
+    "title": "利用者からログインできないと連絡が来た",
+    "number": 6
+  },
+  {
+    "slug": "situation-07-case",
+    "title": "障害が起きたが原因が分からない",
+    "number": 7
+  },
+  {
+    "slug": "situation-08-case",
+    "title": "同じエラーが一部の人にだけ起きる",
+    "number": 8
+  },
+  {
+    "slug": "situation-09-case",
+    "title": "調べても解決できず時間が過ぎている",
+    "number": 9
+  },
+  {
+    "slug": "situation-10-case",
+    "title": "AIが原因と対処法を提示した",
+    "number": 10
+  },
+  {
+    "slug": "situation-11-case",
+    "title": "毎月の作業に時間がかかっている",
+    "number": 11
+  },
+  {
+    "slug": "situation-12-case",
+    "title": "同じ問い合わせが何度も届く",
+    "number": 12
+  },
+  {
+    "slug": "situation-13-case",
+    "title": "改善したいことが複数あって選べない",
+    "number": 13
+  },
+  {
+    "slug": "situation-14-case",
+    "title": "手作業を自動化する提案が出た",
+    "number": 14
+  },
+  {
+    "slug": "situation-15-case",
+    "title": "改善後も負担が減ったか分からない",
+    "number": 15
+  },
+  {
+    "slug": "situation-16-case",
+    "title": "初めて使う技術を仕事で調べることになった",
+    "number": 16
+  },
+  {
+    "slug": "situation-17-case",
+    "title": "既存のプログラムを修正する必要がある",
+    "number": 17
+  },
+  {
+    "slug": "situation-18-case",
+    "title": "ツールは完成したが正しく動くか不安",
+    "number": 18
+  },
+  {
+    "slug": "situation-19-case",
+    "title": "AIが作ったコードを使いたい",
+    "number": 19
+  },
+  {
+    "slug": "situation-20-case",
+    "title": "技術の候補が複数あって決められない",
+    "number": 20
+  },
+  {
+    "slug": "situation-21-case",
+    "title": "古いサーバーの移行を検討する",
+    "number": 21
+  },
+  {
+    "slug": "situation-22-case",
+    "title": "システムに設定変更を加える必要がある",
+    "number": 22
+  },
+  {
+    "slug": "situation-23-case",
+    "title": "バックアップが取得されているか分からない",
+    "number": 23
+  },
+  {
+    "slug": "situation-24-case",
+    "title": "特定の人だけが知っている作業がある",
+    "number": 24
+  },
+  {
+    "slug": "situation-25-case",
+    "title": "更新後に問題が見つかった",
+    "number": 25
+  },
+  {
+    "slug": "situation-26-case",
+    "title": "ベンダーに何を聞けばよいか分からない",
+    "number": 26
+  },
+  {
+    "slug": "situation-27-case",
+    "title": "技術に詳しくない相手へ状況を報告する",
+    "number": 27
+  },
+  {
+    "slug": "situation-28-case",
+    "title": "関係者の意見が分かれている",
+    "number": 28
+  },
+  {
+    "slug": "situation-29-case",
+    "title": "レビューで指摘を受けて対応に迷う",
+    "number": 29
+  },
+  {
+    "slug": "situation-30-case",
+    "title": "仕事は終わったが次にどう生かすか分からない",
+    "number": 30
+  }
+]

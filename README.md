@@ -10,9 +10,10 @@ IT人材の自走力を **7分野×4項目＝28項目** から振り返る、HTM
 - `situations.html`：仕事の場面ごとの行動と関連する能力
 - `styles.css`：見た目とレスポンシブ対応
 - `app.js`：診断項目、集計、保存、データの入出力
-- `src/content/*.md`：7つの教材と各能力の15分実践の本文（編集用）
-- `src/layouts/*.html`：各教材のページ枠
-- `ownership.html` など7つの教材HTMLと各能力の `*-quick.html`：上記から生成する公開用HTML
+- `src/content/*.md`：7つの教材、各能力の15分実践と仕事の場面のケース本文（編集用）
+- `src/layouts/*.html`：各教材と仕事の場面のページ枠
+- `src/data/situation-cases.json`：仕事の場面のケースのタイトルと出力先
+- `ownership.html` など7つの教材HTMLと各能力の `*-quick.html`、`system-understanding-case.html` と `situation-*-case.html`：上記から生成する公開用HTML
 - `scripts/build-module.mjs`：教材の生成スクリプト
 
 ## ローカルで使う
@@ -21,11 +22,11 @@ IT人材の自走力を **7分野×4項目＝28項目** から振り返る、HTM
 
 ## 教材を編集する
 
-Node.js 20以上とnpmを用意し、初回に `npm ci` を実行します。教材本文は `src/content/` 内の対応するMarkdownファイルを編集し、`npm run build` でルートの教材HTMLと各能力の15分実践のHTMLをすべて再生成してください。ページの枠やタイトルなどは `src/layouts/` 内の対応するHTMLファイルにあります。例えば問題解決力の教材は、`src/content/problem-solving.md` と `src/layouts/problem-solving.html` から `problem-solving.html` を生成します。
+Node.js 20以上とnpmを用意し、初回に `npm ci` を実行します。教材本文は `src/content/` 内の対応するMarkdownファイルを編集し、`npm run build` でルートの教材、15分実践とケースのHTMLをすべて再生成してください。ページの枠やタイトルなどは `src/layouts/` 内の対応するHTMLファイルにあります。例えば問題解決力の教材は、`src/content/problem-solving.md` と `src/layouts/problem-solving.html` から `problem-solving.html` を生成します。
 
 生成後はMarkdown、テンプレートと生成されたHTMLを一緒にコミットしてください。現状のGitHub Pagesの公開方法ではビルドは自動実行されず、ルートのHTMLがそのまま公開されます。生成されたHTMLは直接編集せず、ソースを修正して再生成します。診断画面と教材一覧ページは従来どおりHTMLを直接編集します。
 
-見出し、段落、リストなどはMarkdownで編集できます。表や開閉カード、装飾のある部分は見た目を保つためにHTMLを残しています。Markdownの構文上、日本語の記号に隣接する強調は解釈されない場合があるため、必要に応じて `<strong>` を使用してください。ビルド後に編集した教材のHTMLをブラウザで開き、表示を確認してください。
+見出し、段落、リストなどはMarkdownで編集できます。表や開閉カード、装飾のある部分は見た目を保つためにHTMLを残しています。Markdownの構文上、日本語の記号に隣接する強調は解釈されない場合があるため、必要に応じて `<strong>` を使用してください。仕事の場面のケース本文は `src/content/situation-01-case.md` などで編集できます。02の本文は `src/content/system-understanding-case.md` です。01など29ページは `src/layouts/situation-case.html` を共通で使用し、タイトルや出力先は `src/data/situation-cases.json` で管理します。ビルド後に編集したHTMLをブラウザで開き、表示を確認してください。
 
 ## GitHub Pages で公開する
 

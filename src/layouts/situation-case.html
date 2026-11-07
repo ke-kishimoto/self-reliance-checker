@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{TITLE}}場面で、何を確認し、どう進めるか考えるケース。">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>{{TITLE}} | 自走力チェック</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="./index.html"><span class="brand-mark">↗</span> 自走力チェック</a><nav class="home-nav" aria-label="メインナビゲーション"><a href="./situations.html">場面から探す</a><a href="./modules.html">育成モジュール</a></nav></div></header>
+  <main class="container learning-page case-page">
+    <nav class="breadcrumbs" aria-label="パンくずリスト"><a href="./index.html">トップ</a> <span aria-hidden="true">/</span> <a href="./situations.html#situation-{{NUMBER}}">仕事の場面</a> <span aria-hidden="true">/</span> {{TITLE}}</nav>
+    <section class="hero learning-hero"><p class="eyebrow">THINKING CASE · 仕事の場面</p><h1>{{TITLE}}</h1><p class="lead">限られた情報から、何を確認し、どう進めるかを自分で考えてみましょう。</p><div class="hero-meta"><span>一人でできる</span><span>目安：15〜20分</span><span>紙・メモ帳があればOK</span></div></section>
+{{CONTENT}}
+    <div class="module-bottom"><a class="button button-secondary" href="./situations.html#situation-{{NUMBER}}">← 仕事の場面に戻る</a> <a class="button button-ghost" href="./index.html#check">診断を振り返る</a></div>
+  </main>
+  <footer class="site-footer"><div class="container"><p>自走力チェック — 自己理解と成長のための試作ツール</p></div></footer>
+</body>
+</html>
